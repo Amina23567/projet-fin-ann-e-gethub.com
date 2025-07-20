@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Produits</title>
-     <link rel="icon" href="img/logo-ck-horizontale.png">
-     <link rel="icon" href="img/logo-ck-horizontale.png">
-    <link rel="stylesheet" href="css/produit.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Panier</title>
+  <link rel="stylesheet" href="css/panier.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-         <div class="navbar">
+        <div class="navbar">
     <div class="menu">
         <img src="img/logo.png" alt="logo">
          <button class="burger" onclick="toggleMenu()">☰</button>
@@ -35,32 +33,129 @@
     </div> 
     <a class="signup" href="inscription.html">S'inscrire</a>
 </div>
-    <div class="container">
-        <header>
-            <h1>Mon panier</h1>
-            <div class="shopping">
-          
-       <div id="cart-icon" title="Voir mon panier">
-  <i class="fas fa-shopping-basket" style="text-decoration: none;"></i> <span id="quantity">0</span>
-</div>
 
+  <!-- Icon panier -->
+  <div id="cart-icon" title="Voir mon panier">
+    <i class="fas fa-shopping-basket"></i>
+    <span id="cart-count">0</span>
+  </div>
 
-               
-            </div>
-        </header>
-        <div class="list" id="product-list">
-        </div>
-        <div class="card">
-            <h1>Card</h1>
-            <ul id="listCard"></ul>
-            <div class="checkOut">
-             <div id="total">0</div>
-             <div class="closeShopping">Close</div>
-            </div>
-        </div>
+  <!-- Contenu panier -->
+  <div id="cart-content">
+    <h4>Mon Panier</h4>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">0</span> MAD</p>
+  </div>
+
+  <!-- Produits -->
+  <main>
+    <h2>Nos Produits</h2>
+    <div class="products">
+      <div class="product">
+        <img src="img/xbakia copy.jpg" alt="Chebakia 1">
+        <h3>Chebakia au Sésames</h3>
+        <p>Prix: 50 MAD</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="img/briwa5 edité.jpg" alt="Chebakia 2">
+        <h3>Briwat Au Miel</h3>
+        <p>Prix: 70 MAD</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="img/Sellou.jpeg" alt="Chebakia 3">
+        <h3>Selou Beldi</h3>
+        <p>Prix: 90 MAD</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product">
+        <img src="img/Recette zlabia _ Gâteau et cuisine Rachida.jpeg" alt="Chebakia 3">
+        <h3>Zelabia</h3>
+        <p>Prix: 99 MAD</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product">
+        <img src="img/sigar7.jpg" alt="Chebakia 3">
+        <h3>Sigar Au Pistaches</h3>
+        <p>Prix: 120 MAD</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product">
+        <img src="img/briwachklat1.jpg" alt="Chebakia 3">
+        <h3>Briwat Au Chocolat</h3>
+        <p>Prix: 150 MAD</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product">
+        <img src="img/pack5.jpg" alt="Chebakia 3">
+        <h3>Pack Santé</h3>
+        <p>Prix: 290 MAD</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product">
+        <img src="img/selou13.jpg" alt="Chebakia 3">
+        <h3>Selou Mix</h3>
+        <p>Prix: 170 MAD</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
     </div>
-  
-    
-   <script src="js/produit.js"></script>
+  </main>
+   <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+
+        <h3>Chebakia Healthy</h3>
+        <p>
+          Notre passion pour la pâtisserie marocaine artisanale nous pousse chaque jour à vous offrir les meilleures
+          chebakia, préparées avec soin et des ingrédients 100% naturels.
+        </p>
+
+      </div>
+
+      <div class="footer-section">
+        <h4>Magasin Principale</h4>
+
+        Rue Allal Ben Abdellah<br>
+        Casablanca, Maroc<br>
+        ChebakiaMarocaine@email.com<br>
+        +212 6 74 13 45 56
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="payement.html">Payement & Taxs </a></li>
+          <li><a href="utilisation.html">Condition d'utilisation</a></li>
+          <li><a href="livraison.html">Condition de livraison</a></li>
+          <li><a href="retour.html">Condition de retour</a></li>
+        </ul>
+        <div class="icons">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-square-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <label for="email">Newsletter</label><br>
+      <input type="email" id="email" placeholder="Entrez votre email">
+      <button>Envoyer</button>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Chebakia Healthy. Tous droits réservés.
+    </div>
+  </footer>
+</div>
+ </div> 
+</section>
+
+  <script src="js/panier.js"></script>
 </body>
 </html>
